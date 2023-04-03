@@ -1,7 +1,7 @@
 import React from "react";
 import { useWorkoutsContext } from "../hooks/useWorkoutsContext";
-import formatDistanceToNow from 'date-fns/formatDistanceToNow'
-import {FaTrash} from 'react-icons/fa'
+import formatDistanceToNow from "date-fns/formatDistanceToNow";
+import { FaTrash } from "react-icons/fa";
 
 const WorkoutDetails = ({ workout }) => {
   const { dispatch } = useWorkoutsContext();
@@ -28,7 +28,7 @@ const WorkoutDetails = ({ workout }) => {
         Reps: {workout.reps}
       </p>
       <p className="m-0 text-[0.9em] text-[#555]">
-        {formatDistanceToNow(new Date(workout.createdAt), {addSuffix: true})}
+        {formatDistanceToNow(new Date(workout.createdAt), { addSuffix: true })}
       </p>
       <span
         onClick={handleClick}
