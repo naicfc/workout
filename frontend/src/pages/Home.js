@@ -22,7 +22,8 @@ const Home = () => {
 
   return (
     <div className="grid grid-cols-5 gap-20">
-      <div className="col-span-3">
+      <div className="p-4 col-span-3">
+        <h3 className="font-semibold mb-4">All Workouts</h3>
         {workouts &&
           workouts.map((workout) => (
             <WorkoutDetails key={workout._id} workout={workout} />
